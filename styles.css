@@ -1,22 +1,23 @@
-.container {
-  width: 375px;
-  background-color: #fdfdfd;
-  display: flex;
-  flex-direction: column;
-  height: 653.32px;
-}
-
 body {
+ background-color: #ebeef5;
   display: flex;
   justify-content: center;
-  background-color: #fff;
+
+}
+
+.container {
+  width: 375px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
 }
 
 .main-nav {
-  width: 375px;
-  height: 92px;
+  width: 100%;
   display: flex;
   justify-content: flex-end;
+  padding: 10px;
 }
 
 .hero {
@@ -26,35 +27,36 @@ body {
   background-image: url("./images/header-illsutration-mobile@2x.png");
   background-size: cover;
   background-position: center;
+  padding: 20px 0;
 }
 
 .hero-content {
   width: 327px;
-  height: 300px; /* i have increased the height because the h2 was not in the hero section */
-  top: 156px;
-  left: 27px;
+  padding: 20px 0;
 }
 
 h1 {
-  font-family: sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 40px;
   font-weight: 700;
   line-height: 52px;
   text-align: center;
   color: #172b4d;
+  margin: 0;
 }
 
 h2 {
   color: #36b37e;
-  font-family: sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 40px;
   font-weight: 700;
   line-height: 52px;
   text-align: center;
+  margin: 0;
 }
 
 p {
-  font-family: sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 20px;
   font-weight: 400;
   line-height: 28px;
@@ -64,12 +66,82 @@ p {
 
 .social-icons {
   list-style-type: none;
-  width: 170.17px;
-  height: 19.62px;
   display: flex;
-  top: 568.89px;
-  left: 105px;
-  gap: 20px; /* add gap to add some space between them */
-  margin-left: 30px; /* add margin to make them in center */
-  color: #505f79;
+  justify-content: center;
+  gap: 20px;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.works1, .works {
+  padding: 24px;
+  background-color: #ffffff;
+}
+
+.works1 h2 {
+  color: #172B4D;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.grid-container {
+  display: grid;
+  gap: 24px;
+}
+
+.work-card {
+  background: #ffffff;
+  border: 1px solid #d0d9d4;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.card-content {
+  padding: 16px;
+}
+
+.card-content h3 {
+  font-family: 'Inter', sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 32px;
+  text-align: center;
+  margin: 0 0 16px 0;
+}
+
+.card-content ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0 0 16px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+}
+
+.card-content li {
+  font-family: 'Inter', sans-serif;
+  background: #ebf0ee;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  padding: 8px 12px;
+  color: #3a4a42;
+}
+
+.card-content button {
+  display: block;
+  width: 122px;
+  background: #36b37f;
+  border: none;
+  border-radius: 4px;
+  padding: 12px;
+  color: #fff;
+  font-size: 17px;
+  font-weight: 500;
+  margin: 0 auto;
+  cursor: pointer;
 }
