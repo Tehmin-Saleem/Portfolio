@@ -232,9 +232,7 @@ border-radius: 40px;
 background-color: #ffffff;
 }
 .skill-icon {
-  /* width: 48px;
-  height: 48px;
-  margin-bottom: 24px; */
+
 
   width: 44px;
 height: 44px;
@@ -245,10 +243,15 @@ left: 2px;
 }
 
 .skill-card h3 {
-  color: #344563;
-  font-size: 24px;
-  font-weight: 600;
-  margin-bottom: 24px;
+  
+
+
+  font-family: Inter;
+font-size: 24px;
+font-weight: 600;
+line-height: 32px;
+text-align: center;
+
 }
 
 .skill-card ul {
@@ -258,6 +261,7 @@ left: 2px;
   flex-wrap: wrap;
   justify-content: center;
   gap: 8px;
+  font-family:Inter
 }
 
 .skill-card li {
@@ -269,8 +273,8 @@ left: 2px;
   border-radius: 8px;
 }
 
-.form{
-  width: Hug (375px)px;
+form{
+  width: Hug (327px)px;
 height: Hug (879px)px;
 top: 5374px;
 padding: 64px 24px 64px 24px;
@@ -278,15 +282,7 @@ gap: 58px;
 
 background-color: #ffffff;
 }
-.heading h2{
-  font-family: Inter;
-font-size: 40px;
-color: #172B4D;
-font-weight: 700;
-line-height: 52px;
-text-align: center;
-background-color: #ffffff;
-}
+
 
 
 
@@ -298,8 +294,23 @@ background-color: #ffffff;
   text-align: center;
   color: #172B4D;
   margin-bottom: 58px;
-}
 
+  font-family: Inter;
+  font-size: 40px;
+  color: #172B4D;
+  font-weight: 700;
+  line-height: 52px;
+  text-align: center;
+  background-color: #ffffff;
+}
+.form-container h2{
+
+margin-left: 20px;
+  width: 327px;
+height: 363px;
+
+
+}
 form {
   display: flex;
   flex-direction: column;
@@ -317,7 +328,7 @@ input, textarea {
   padding: 15px 16px;
   border: 1px solid #D0D9D4;
   border-radius: 4px;
-  font-family: 'Inter', sans-serif;
+  font-family: Inter, sans-serif;
   font-size: 15px;
   color: #6B778C;
 }
@@ -337,7 +348,9 @@ textarea {
   padding: 12px 16px;
   border: none;
   border-radius: 4px;
-  cursor: pointer;
+
+
+  
 }
 
 .email-contact {
