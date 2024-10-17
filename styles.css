@@ -6,7 +6,7 @@ body {
 
 .container {
   width: 375px;
-  background-color: #ffffff;
+  background-color: #fff;
   display: flex;
   flex-direction: column;
   overflow: hidden;
@@ -75,7 +75,7 @@ p {
 .works1,
 .works {
   padding: 24px;
-  background-color: #ffffff;
+  background-color: #fff;
 }
 
 .works1 h2 {
@@ -90,11 +90,12 @@ p {
 }
 
 .work-card {
-  background: #ffffff;
+  background: #fff;
   border: 1px solid #d0d9d4;
   border-radius: 8px;
   overflow: hidden;
 }
+
 .work-card img {
   width: 100%;
   height: 252px;
@@ -150,20 +151,23 @@ p {
   margin: 0 auto;
   cursor: pointer;
 }
+
 .about {
   padding: 24px;
-  background-color: #ffffff;
+  background-color: #fff;
   text-align: center;
 }
+
 .card {
-  width: Hug (351px) px;
-  height: Hug (338px) px;
+  width: hug (351px) px;
+  height: hug (338px) px;
   gap: 24px;
-  opacity: 0px;
-  background-color: #ffffff;
+  opacity: 0;
+  background-color: #fff;
 }
+
 .about h2 {
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
   font-size: 40px;
   font-weight: 700;
   line-height: 52px;
@@ -172,7 +176,7 @@ p {
 }
 
 .about p {
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
   font-size: 20px;
   font-weight: 400;
   line-height: 32px;
@@ -182,28 +186,23 @@ p {
 
 .resume-btn {
   background-color: #36b37f;
-  color: #ffffff;
+  color: #fff;
   font-size: 17px;
   font-weight: 500;
   padding: 12px;
   border: none;
-
-  width: Hug (153px) px;
-  height: Hug (48px) px;
-
+  width: hug (153px) px;
+  height: hug (48px) px;
   gap: 10px;
   border-radius: 4px;
 }
 
 .skills-container {
   display: grid;
-
-  width: Fixed (327px) px;
-  height: Hug (998px) px;
-
+  width: fixed (327px) px;
+  height: hug (998px) px;
   gap: 24px;
-
-  background-color: #ffffff;
+  background-color: #fff;
 }
 
 .skill-card {
@@ -218,14 +217,16 @@ p {
   width: 300px;
   height: 316px;
 }
+
 .icon {
   width: 80px;
   height: 80px;
   top: 24px;
   left: 124px;
   border-radius: 40px;
-  background-color: #ffffff;
+  background-color: #fff;
 }
+
 .skill-icon {
   width: 44px;
   height: 44px;
@@ -234,7 +235,7 @@ p {
 }
 
 .skill-card h3 {
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
   font-size: 24px;
   font-weight: 600;
   line-height: 32px;
@@ -248,11 +249,11 @@ p {
   flex-wrap: wrap;
   justify-content: center;
   gap: 8px;
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
 }
 
 .skill-card li {
-  background-color: #ffffff;
+  background-color: #fff;
   color: #36b37e;
   font-size: 12px;
   font-weight: 600;
@@ -261,13 +262,12 @@ p {
 }
 
 form {
-  width: Hug (327px) px;
-  height: Hug (879px) px;
+  width: hug (327px) px;
+  height: hug (879px) px;
   top: 5374px;
   padding: 64px 24px 64px 24px;
   gap: 58px;
-
-  background-color: #ffffff;
+  background-color: #fff;
 }
 
 .form h2 {
@@ -278,29 +278,13 @@ form {
   text-align: center;
   color: #172b4d;
   margin-bottom: 58px;
-
-  font-family: Inter;
-  font-size: 40px;
-  color: #172b4d;
-  font-weight: 700;
-  line-height: 52px;
-  text-align: center;
-  background-color: #ffffff;
+  background-color: #fff;
 }
+
 .form-container h2 {
   margin-left: 20px;
   width: 327px;
   height: 363px;
-}
-form {
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-
-  width: Hug (327px) px;
-  height: Hug (330px) px;
-  gap: 24px;
-  opacity: 0px;
 }
 
 input,
@@ -308,7 +292,7 @@ textarea {
   padding: 15px 16px;
   border: 1px solid #d0d9d4;
   border-radius: 4px;
-  font-family: Inter, sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 15px;
   color: #6b778c;
 }
@@ -321,7 +305,7 @@ textarea {
 .submit-btn {
   align-self: center;
   background-color: #36b37f;
-  color: #ffffff;
+  color: #fff;
   font-family: "Inter", sans-serif;
   font-size: 17px;
   font-weight: 500;
@@ -337,14 +321,5 @@ textarea {
   line-height: 32px;
   text-align: center;
   color: #42526e;
-  margin-top: 24px;
-}
-
-.social-icons {
-  list-style-type: none;
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  padding: 0;
   margin-top: 24px;
 }
