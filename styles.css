@@ -200,7 +200,7 @@ p {
 .skills-container {
   display: grid;
   width: 327px;
-  height:998px;
+  height: 998px;
   gap: 24px;
   background-color: #fff;
 }
