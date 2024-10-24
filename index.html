@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mobile Interface</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+
+  
     <div class="container">
         <header class="main-header">
             <nav class="main-nav">
@@ -16,8 +17,24 @@
                 </label>
             </nav>
         </header>
+        <div class="mobile-menu">
+            <div class="menu-content">
+                <button class="close-menu">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M5.29289 5.29289C5.68342 4.90237 6.31658 4.90237 6.70711 5.29289L12 10.5858L17.2929 5.29289C17.6834 4.90237 18.3166 4.90237 18.7071 5.29289C19.0976 5.68342 19.0976 6.31658 18.7071 6.70711L13.4142 12L18.7071 17.2929C19.0976 17.6834 19.0976 18.3166 18.7071 18.7071C18.3166 19.0976 17.6834 19.0976 17.2929 18.7071L12 13.4142L6.70711 18.7071C6.31658 19.0976 5.68342 19.0976 5.29289 18.7071C4.90237 18.3166 4.90237 17.6834 5.29289 17.2929L10.5858 12L5.29289 6.70711C4.90237 6.31658 4.90237 5.68342 5.29289 5.29289Z" fill="#67798E"/>
+                    </svg>
+                </button>
+                <nav class="menu-links">
+                    <a href="#portfolio">Portfolio</a>
+                    <a href="#about-section">About</a>
+                    <a href="#contact-form">Contact</a>
+                </nav>
+            </div>
+        </div>
+
+
         <main class="main-content">
-            <section class="hero">
+            <section  class="hero">
                 <div class="hero-content">
                     <h1>Hey there.<br>I'm <span class="highlight">A</span>lex.</h1>
                     <h2>I'm a software developer</h2>
@@ -31,7 +48,7 @@
                     </ul>
                 </div>
             </section>
-            <section class="works1">
+            <section id="portfolio" class="works">
                 <h2>My Recent Works</h2>
                 <div class="grid-container">
                     <div class="work-card">
@@ -50,7 +67,7 @@
                     
                 </div>
             </section>
-            <section class="works">
+            <section id="portfolio" class="works">
                
                 <div class="grid-container">
                     <div class="work-card">
@@ -69,7 +86,7 @@
                     
                 </div>
             </section>
-            <section class="works">
+            <section id="portfolio" class="works">
                
                 <div class="grid-container">
                     <div class="work-card">
@@ -88,7 +105,7 @@
                     
                 </div>
             </section>
-            <section class="works">
+            <section id="portfolio" class="works">
               
                 <div class="grid-container">
                     <div class="work-card">
@@ -107,7 +124,7 @@
                     
                 </div>
             </section>
-            <section class="about">
+            <section id="about-section" class="about">
                 <div class="card">
                 <h2>About me</h2>
                 <p>I can help you build a product, feature or website. Look through some of my work and experience! If you like what you see and have a project you need coded, don't hesitate to contact me.</p>
@@ -158,7 +175,7 @@
                     
                 </div>
             </section>
-            <section class="form">
+            <section id="contact-form"  class="form">
                 <div class="form-container">
                     <h2>I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h2>
                     <form>
@@ -179,7 +196,57 @@
       </section>
             </section>
         </main>
-     
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                const menuToggle = document.querySelector('.menu-icon');
+                const mobileMenu = document.querySelector('.mobile-menu');
+                const closeMenuBtn = document.querySelector('.close-menu');
+                const menuLinks = document.querySelectorAll('.menu-links a');
+            
+         
+                function openMenu() {
+                    mobileMenu.classList.add('active');
+                    document.body.classList.add('menu-open');
+                }
+            
+               
+                function closeMenu() {
+                    mobileMenu.classList.remove('active');
+                    document.body.classList.remove('menu-open');
+                }
+            
+              
+                menuToggle.addEventListener('click', openMenu);
+            
+            
+                closeMenuBtn.addEventListener('click', closeMenu);
+            
+              
+                menuLinks.forEach(link => {
+                    link.addEventListener('click', function(e) {
+                        e.preventDefault();
+                        
+                       
+                        const targetId = this.getAttribute('href').substring(1);
+                        const targetSection = document.getElementById(targetId);
+            
+                        if (targetSection) {
+                          
+                            closeMenu();
+            
+                           
+                            setTimeout(() => {
+                                targetSection.scrollIntoView({
+                                    behavior: 'smooth'
+                                });
+                            }, 300); 
+                        }
+                    });
+                });
+            });
+            
+        </script>
     </div>
+    
 </body>
 </html>
