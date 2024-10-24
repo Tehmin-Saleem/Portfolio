@@ -203,47 +203,45 @@
                 const closeMenuBtn = document.querySelector('.close-menu');
                 const menuLinks = document.querySelectorAll('.menu-links a');
             
-         
+                
                 function openMenu() {
                     mobileMenu.classList.add('active');
                     document.body.classList.add('menu-open');
                 }
             
-               
                 function closeMenu() {
+                    console.log("Close menu button clicked!"); 
                     mobileMenu.classList.remove('active');
                     document.body.classList.remove('menu-open');
                 }
+                
             
-              
+               
                 menuToggle.addEventListener('click', openMenu);
             
-            
+               
                 closeMenuBtn.addEventListener('click', closeMenu);
             
-              
+                
                 menuLinks.forEach(link => {
                     link.addEventListener('click', function(e) {
-                        e.preventDefault();
-                        
-                       
+                        e.preventDefault(); 
+            
                         const targetId = this.getAttribute('href').substring(1);
                         const targetSection = document.getElementById(targetId);
             
                         if (targetSection) {
-                          
                             closeMenu();
-            
-                           
                             setTimeout(() => {
                                 targetSection.scrollIntoView({
                                     behavior: 'smooth'
                                 });
-                            }, 300); 
+                            }, 300);
                         }
                     });
                 });
             });
+            
             
         </script>
     </div>

@@ -33,12 +33,12 @@ body {
 }
 
 .mobile-menu {
-  position: absolute; /* Changed from fixed to absolute */
+  position: absolute; 
   top: 0;
   left: 0;
-  width: 100%; /* Changed from 375px to 100% */
+  width: 100%; 
   height: 100vh;
-  background-color: rgba(255, 255, 255, 0.95);
+  background-color: rgba(189, 28, 28, 0.95);
   display: none;
   z-index: 1000;
 }
@@ -51,7 +51,6 @@ body {
   padding: 2rem;
   position: relative;
 }
-
 .close-menu {
   position: absolute;
   top: 1rem;
@@ -60,7 +59,10 @@ body {
   border: none;
   cursor: pointer;
   padding: 0.5rem;
+  z-index: 1002;
+  background-color: #172b4d;
 }
+
 
 .menu-links {
   display: flex;
